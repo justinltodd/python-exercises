@@ -45,5 +45,10 @@ print("A 1kg bomb supplies " + str(bomb_energy) + " Joules.")
 print("")
 
 def get_work(mass, acceleration, distance):
+    force = mass * acceleration
+    work = force * distance
+    return work
+train_work = get_work(mass = train_mass, acceleration = train_acceleration, distance = train_distance)
+print(train_work)
 
-
+print("The GE train does " + str(train_work) + " Joules of work over " + str(train_distance) + " meters.")
