@@ -104,3 +104,27 @@ print(square_root(16))
 print(square_root(100))
 # should print 10
 print("")
+
+# Write your tip function here:
+def tip(total, percentage):
+  payment = float(percentage) / float(100) * total
+  return payment
+
+# Uncomment these function calls to test your tip function:
+print(tip(10, 25))
+# should print 2.5
+print(tip(0, 100))
+# should print 0.0
+print("")
+
+# Write your win_percentage function here:
+def win_percentage(wins, losses):
+  average = float(wins) / (float(wins) + float(losses)) * 100
+  return average
+
+# Uncomment these function calls to test your win_percentage function:
+print(win_percentage(5, 5))
+# should print 50
+print(win_percentage(10, 0))
+# should print 100
+print("")
