@@ -128,3 +128,14 @@ print(win_percentage(5, 5))
 print(win_percentage(10, 0))
 # should print 100
 print("")
+
+# Write your remainder function here:
+def remainder(num1, num2):
+  remainder = (num1 * 2) % (num2 / 2)
+  return remainder
+
+# Uncomment these function calls to test your remainder function:
+print(remainder(15, 14))
+# should print 2
+print(remainder(9, 6))
+# should print 0
