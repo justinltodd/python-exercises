@@ -52,3 +52,55 @@ train_work = get_work(mass = train_mass, acceleration = train_acceleration, dist
 print(train_work)
 
 print("The GE train does " + str(train_work) + " Joules of work over " + str(train_distance) + " meters.")
+print("")
+
+def average(num1, num2):
+  average = (float(num1) + float(num2)) / 2
+  return average
+
+# Uncomment these function calls to test your average function:
+print(average(1, 100))
+# The average of 1 and 100 is 50.5
+print(average(1, -1))
+# The average of 1 and -1 is 0
+print("")
+
+def tenth_power(num):
+  power = num ** 10
+  return power
+
+# Uncomment these function calls to test your tenth_power function:
+print(tenth_power(1))
+# 1 to the 10th power is 1
+print(tenth_power(0))
+# 0 to the 10th power is 0
+print(tenth_power(2))
+# 2 to the 10th power is 1024
+print("")
+
+# introduction function here:
+def introduction(first_name, last_name):
+    name = last_name + ", " + first_name + " " + last_name
+    #print(last_name + ", " + first_name + " " + last_name)
+    return name
+
+# Uncomment these function calls to test your introduction function:
+print(introduction("James", "Bond"))
+# should print Bond, James Bond
+print(introduction("Maya", "Angelou"))
+# should print Angelou, Maya Angelou
+print("")
+
+# square_root function here with math or without:
+import math
+def square_root(num):
+    root = num ** 0.5
+    #root = math.sqrt(num)
+    return root
+
+# Uncomment these function calls to test your square_root function:
+print(square_root(16))
+# should print 4
+print(square_root(100))
+# should print 10
+print("")
